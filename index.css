@@ -1,0 +1,50 @@
+@import url("./globalStyles.css");
+
+header {
+    height: 10dvh;
+    border-bottom: 2px solid var(--gray-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+}
+
+.burger__menu {
+    font-size: clamp(1.7rem, 1.604rem + 0.44vw, 2rem);
+
+}
+
+main {
+    height: 75dvh;
+    background-color: aqua;
+    padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid var(--gray-4);
+}
+
+main li a {
+    text-decoration: none;
+}
+
+main li {
+    list-style: none;
+}
+
+footer {
+    height: 15dvh;
+    background-color: blue;
+    padding-right: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+}
+
+.search__profile img {
+    width: 2rem;
+    border-radius: 50%;
+    border: 2px solid rgb(7, 182, 212)
+}
+
+h4 {
+    display: none;
+}
