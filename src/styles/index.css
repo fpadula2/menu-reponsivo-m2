@@ -100,7 +100,7 @@ h4 {
 
 
 .search input {
-    height: 2rem;
+    height: 2.3rem;
     padding-left: 1.3rem;
     background-color: var(--grey-5);
     border: 1px solid transparent;
@@ -118,6 +118,11 @@ h4 {
 }
 
 @media (max-width: 450px) {
+
+    header {
+        height: 10vh;
+    }
+
     .header__container {
         display: flex;
         justify-content: space-between;
@@ -128,14 +133,20 @@ h4 {
         flex-direction: column;
         gap: 2rem;
         align-items: flex-start;
+        background-color: red;
+        height: 94vh;
+        width: 100%;
     }
 
     .right__container {
         flex-direction: column;
+        width: 100%;
     }
 
     .burger__div {
-        display: block;
+        display: inline-block;
+        z-index: 1;
+
     }
 
     header nav {
@@ -149,6 +160,34 @@ h4 {
 
     .search__profile {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+
+    h4 {
+        display: block;
+        color: var(--grey-1);
+        font-weight: var(--font-weight2);
+    }
+
+    .search__input {
+        width: 80dvw;
+        padding-left: 0.15rem
+    }
+
+    .fa-magnifying-glass {
+        top: 0.8rem;
     }
 
 
