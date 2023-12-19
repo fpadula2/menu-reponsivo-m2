@@ -4,6 +4,8 @@
 header {
     padding-top: clamp(1.2rem, 0.943rem + 1.174vw, 1.7rem);
     padding-bottom: clamp(1.2rem, 0.943rem + 1.174vw, 1.7rem);
+    padding-left: clamp(1.6rem, 1.472rem + 0.587vw, 2rem);
+    padding-right: clamp(1.6rem, 1.472rem + 0.587vw, 2rem);
     border-bottom: 2px solid var(--grey-4);
 
 
@@ -62,7 +64,7 @@ header a:hover {
 }
 
 .profile img {
-    width: 3rem;
+    width: clamp(2.2rem, 1.943rem + 1.174vw, 3rem);
     border-radius: 50%;
     border: 2px solid rgb(32, 147, 255);
 }
@@ -89,15 +91,21 @@ h4 {
 
 
 .search input {
-    height: 100%;
+    height: 2rem;
+    padding-left: 1.3rem;
+    background-color: var(--grey-5);
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
 
     /* display: flex; */
 }
 
 .fa-magnifying-glass {
-    left: 0.2rem;
+    left: 0.3rem;
     font-size: 0.8rem;
     position: absolute;
     color: var(--grey-2);
-    top: 0.3rem;
+    top: 0.7rem;
 }
+
+@media screen and (max-width: 450px) {}
