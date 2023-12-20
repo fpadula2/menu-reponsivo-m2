@@ -17,34 +17,106 @@ header {
 
 main {
     height: 75dvh;
-    background-color: aqua;
-    padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid var(--gray-4);
+    /* justify-content: space-around; */
+
 }
 
 main li a {
     text-decoration: none;
+    color: var(--gray-2);
+    padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
 }
 
 main li {
     list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main li:hover {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--gray-6);
+    color: var(--gray-1);
+    transition: 0.2s;
+}
+
+li a {
+    color: red;
 }
 
 footer {
     height: 15dvh;
-    background-color: blue;
     padding-right: clamp(2rem, 1.286rem + 1.905vw, 3rem);
     padding-left: clamp(2rem, 1.286rem + 1.905vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+
 }
 
-.search__profile img {
+footer img {
     width: 2rem;
     border-radius: 50%;
-    border: 2px solid rgb(7, 182, 212)
+    border: 2px solid var(--color-brand-1);
+
+}
+
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.search__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-magnifying-glass {
+    color: var(--gray-2);
+    position: absolute;
+    left: 0.6875rem;
+    font-size: clamp(0.75rem, 0.67rem + 0.367vw, 1rem);
+    top: 0.6875rem;
+}
+
+.search__input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-brand-1);
+    height: clamp(2.2rem, 2.152rem + 0.22vw, 2.35rem);
+    background: var(--gray-5);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.search__box {
+    position: relative;
 }
 
 h4 {
-    display: none;
+    font-weight: 500;
 }
