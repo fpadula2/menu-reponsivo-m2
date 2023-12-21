@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
         <div class="header__container">
             <div class="logo">
                 <img src="./icons/Tech Blog.svg" alt="Logo Tech Blog">
-                <button>
+                <button onclick="animar()" type="submit" id="btn">
                     <span class="list"></span>
                     <span class="list"></span>
                     <span class="list"></span>
@@ -20,6 +21,7 @@
             </div>
             <div class="mobile__elements">
                 <div class="left__container">
+
                     <div class="menu">
                         <ul>
                             <li><a href="#">All</a></li>
@@ -36,7 +38,7 @@
                         <input class="input__search" type="search">
                     </div>
                     <div class="profile">
-                        <img src="./icons/foto1.ico" alt="">
+                        <img src="./icons/foto1.ico" alt="Foto do Perfil">
                         <h4>Felipe Mello Padula</h4>
                     </div>
                 </div>
@@ -44,7 +46,8 @@
         </div>
         </div>
     </header>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/50f2129a7d.js" crossorigin="anonymous"></script>
 </body>
-<script src="https://kit.fontawesome.com/50f2129a7d.js" crossorigin="anonymous"></script>
 
 </html>
