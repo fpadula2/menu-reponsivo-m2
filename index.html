@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="header__desktop">
+        <div class="box__global">
+            <header>
+                <div class="logo">
+                    <img src="./icons/Tech Blog.svg" alt="Logo Tech Blog">
+                </div>
+                <div class="burger__menu">
+                    <button id="btn" onclick="animar()" class="burger__menu" type="button">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
+                </div>
+            </header>
+            <div id="mobile">
+                <main>
+                    <div class="logo__desktop">
+                        <img src="./icons/Tech Blog.svg" alt="Logo Tech Blog">
+                    </div>
+                    <ul class="menu__list">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Java</a></li>
+                    </ul>
+                </main>
+                <footer>
+                    <div class="search__box">
+                        <input type="text" class="search__input" placeholder="Procurar por">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="./icons/foto1.ico" alt="Foto do Perfil" class="profile__img">
+                        <h4>Felipe Mello Padula</h4>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="./css/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/50f2129a7d.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
